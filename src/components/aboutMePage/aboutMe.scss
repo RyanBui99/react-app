@@ -1,0 +1,14 @@
+#aboutMe {
+    background-color: yellow;
+    min-height: 100vh;
+    .flex {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    section {
+        position: relative;
+    }
+}
