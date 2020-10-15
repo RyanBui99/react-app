@@ -18,6 +18,8 @@ $navbar-color: black;
 
 nav {
     display: block;
+    padding: 2rem 7.5rem 2rem 7.5rem;
+    position: fixed;
 }
 
 .nav-wrapper {
@@ -31,6 +33,14 @@ nav {
     list-style: none;
     text-decoration: none;
     z-index: 999;
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }
 
 .logo-link {

@@ -43,8 +43,12 @@ export default class NavBar extends Component {
             <div className='nav-wrapper'> 
                 <div className='logo-link'>
                     <Link 
-                    to='/'
-                    onClick={this.scrollToTop}>
+                    to='homePage'
+                    activeClass='active'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}>
                         RB
                     </Link>
                 </div>

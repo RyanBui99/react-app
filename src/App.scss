@@ -4,16 +4,11 @@ $third-color: #303030;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-* {
-    margin: 0;
-}
 body {
     background-color: $primary-color;
 }
 
-body:after {
-    content: '';
-    background-image: url("/graintFilter/paper_1_@2X.png");
-    height: 100%;
-    width: 100%;
+body::-webkit-scrollbar {
+    display: none;
 }
+
