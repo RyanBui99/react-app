@@ -1,0 +1,39 @@
+$font-color: #FFE3F1;
+$navbar-color: black;
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+
+.nav {
+    left: 0;
+    right: 0;
+
+}
+
+nav {
+    display: block;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.logo-link {
+    display: block;
+    
+}

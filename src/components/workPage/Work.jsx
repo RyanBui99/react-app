@@ -1,7 +1,7 @@
 import React from 'react'
 import './work.scss'
 
-function work() {
+function Work() {
     return (
         <section id='work'>
             <div className='flex'>
@@ -11,4 +11,4 @@ function work() {
     )
 }
 
-export default work
+export default Work

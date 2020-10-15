@@ -1,8 +1,8 @@
 const NavBarIems = [
     {
         id: 1,
-        name: 'Home',
-        link: '/',
+        name: 'Work',
+        link: 'work',
         cName: 'nav-links',
         activeClass: 'active',
         spy: true,
@@ -14,8 +14,8 @@ const NavBarIems = [
 
     {
         id: 2,
-        name: 'Work',
-        link: '/work',
+        name: 'About me',
+        link: 'aboutMe',
         cName: 'nav-links',
         activeClass: 'active',
         spy: true,
@@ -27,21 +27,8 @@ const NavBarIems = [
 
     {
         id: 3,
-        name: 'About me',
-        link: '/aboutMe',
-        cName: 'nav-links',
-        activeClass: 'active',
-        spy: true,
-        smooth: true,
-        offset: -70,
-        duration: 500
-    },
-
-
-    {
-        id: 4,
         name: 'Contact',
-        link: '/contact',
+        link: 'contact',
         cName: 'nav-links',
         activeClass: 'active',
         spy: true,

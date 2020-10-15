@@ -10,7 +10,7 @@
 import React, { Component }  from 'react'
 import './navBarStyle.scss'
 import NavBarItems from './navBarItems'
-import { Link, animateScroll as scroll} from 'react-scroll'
+import { Link } from 'react-scroll'
 
 export default class NavBar extends Component {
 
@@ -22,7 +22,7 @@ export default class NavBar extends Component {
     
         const mapFunction = NavBarItems.map((item, id) => {
             return (
-                <li key={id} >
+                <li key={id}>
                     <Link
                     to={item.link} 
                     className={item.cName}
@@ -31,7 +31,6 @@ export default class NavBar extends Component {
                     smooth={item.smooth}
                     offset={item.offset}
                     duration={item.duration}>
-
                     {item.name}
                     </Link>
                 </li>
@@ -40,12 +39,21 @@ export default class NavBar extends Component {
 
 
     return (
-        <nav className='flex'>
-            <div className='navBar-contaioner'>
-                <ul className='navigation-items'>  
-                    {mapFunction} 
+        <nav className='nav'>
+            <div className='nav-wrapper'> 
+                <div className='logo-link'>
+                    <Link 
+                    to='/'
+                    onClick={this.scrollToTop}>
+                        RB
+                    </Link>
+                </div>
+
+                <ul className='nav-links'>
+                    {mapFunction}
                 </ul>
-            </div>
+
+            </div>   
         </nav>
     )
 }

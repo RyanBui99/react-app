@@ -1,7 +1,7 @@
 import React from 'react'
 import './aboutMe.scss'
 
-function aboutMe() {
+function AboutMe() {
     return (
         <section id='aboutMe'>
             <div className='flex'>
@@ -11,4 +11,4 @@ function aboutMe() {
     )
 }
 
-export default aboutMe
+export default AboutMe
