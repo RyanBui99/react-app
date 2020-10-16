@@ -1,7 +1,7 @@
 #homePage {
     background-color: red;
     min-height: 100vh;
-    
+    padding-top: 8rem;
 
     .flex {
         align-items: center;
@@ -9,5 +9,4 @@
         flex-direction: column;
         justify-content: center;
     }
-    
 }

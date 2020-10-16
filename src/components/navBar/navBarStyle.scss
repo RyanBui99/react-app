@@ -13,19 +13,32 @@ $navbar-color: black;
 .nav {
     left: 0;
     right: 0;
-
+    position: fixed;
+    overflow: hidden;
 }
 
 nav {
     display: block;
     padding: 2rem 7.5rem 2rem 7.5rem;
-    position: fixed;
+
+    li {
+        display: list-item;
+        margin-left: 3.12vw;
+    }
 }
 
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
 }
+
+ul {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 
 .nav-links {
     display: flex;
@@ -35,15 +48,3 @@ nav {
     z-index: 999;
 }
 
-ul {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-.logo-link {
-    display: block;
-    
-}
