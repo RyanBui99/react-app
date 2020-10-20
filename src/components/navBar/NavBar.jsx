@@ -9,7 +9,7 @@
  */
 import React, { Component }  from 'react'
 import './navBarStyle.scss'
-import NavBarItems from './navBarItems'
+import NavBarItems from './NavBarItems'
 import { Link } from 'react-scroll'
 
 export default class NavBar extends Component {
