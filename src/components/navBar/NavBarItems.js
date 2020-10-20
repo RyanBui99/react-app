@@ -1,4 +1,4 @@
-const NavBarIems = [
+const NavBarItems = [
     {
         id: 1,
         name: 'Work',
@@ -38,4 +38,4 @@ const NavBarIems = [
     }
 ]
 
-export default NavBarIems
+export default NavBarItems

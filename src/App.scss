@@ -7,6 +7,8 @@ $third-color: #303030;
 html, body {
     background-color: $primary-color;
     cursor: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
 }
 
 body::-webkit-scrollbar {
@@ -29,6 +31,10 @@ section {
     pointer-events: none;
     z-index: 9999;
     mix-blend-mode: difference;
-    transition: all 150ms ease;
+    transition: all 500ms ease;
     transition-property: opacity;
+}
+
+.cursor--hidden {
+    opacity: 0;
 }
