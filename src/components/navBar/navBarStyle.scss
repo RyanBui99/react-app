@@ -50,3 +50,23 @@ ul {
     z-index: 999;
 }
 
+a::before {
+    position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	padding: 10px 0;
+	max-width: 0;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	content: attr(data-hover);
+	-webkit-transition: max-width 0.5s;
+	-moz-transition: max-width 0.5s;
+	transition: max-width 0.5s;
+	white-space: nowrap;
+}
+
+a:hover:before, 
+a:focus::before {
+    max-width: 100%;
+}
