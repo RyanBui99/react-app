@@ -50,23 +50,24 @@ ul {
     z-index: 999;
 }
 
-a::before {
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
     position: absolute;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-	padding: 10px 0;
-	max-width: 0;
-	border-bottom: 2px solid #fff;
-	color: #fff;
-	content: attr(data-hover);
-	-webkit-transition: max-width 0.5s;
-	-moz-transition: max-width 0.5s;
-	transition: max-width 0.5s;
-	white-space: nowrap;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #fff;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+  left: 0;
+  background: #fff;
 }
 
-a:hover:before, 
-a:focus::before {
-    max-width: 100%;
-}
+
